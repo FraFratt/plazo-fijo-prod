@@ -1,0 +1,91 @@
+<!DOCTYPE html5>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="INDEX, FOLLOW"/>
+  <link rel="icon" href="images/svg/calcu3dprop.svg" type="image/svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+<!-- property -->
+<meta property="og:url" content="https://calcularplazofijo.web.app/"/>
+    <meta property="og:title" content="CALCULAR PLAZO FIJO - Calcula tu plazo fijo con interes compuesto"/>
+    <meta property="og:description" content="Calcular plazo fijo online"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://calcularplazofijo.web.app/images/jpg/plazofijobanner.jpg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+</head>
+
+<body>
+  <header>
+    <nav id="navLogo">
+      <a href="#navLogo">
+        <img class="logo" src="images/svg/calcu3dprop.svg" alt="logo de una calculadora">
+      </a>
+      <h1>&nbspCalculadora Plazo fijo</h1>
+    </nav>
+    <div class="columna-deco">
+      <div class="deco-uno"></div>
+      <div class="deco-dos"></div>
+      <div class="deco-tres"></div>
+    </div>
+  </header>
+  <section>
+    <article class="descripcion">
+      <h1>¿Qué hace esta calculadora?</h1>
+      <p>Calcula la tasa de interés compuesto, un tipo de interés que se calcula sobre
+        el capital inicial más los intereses generados durante el plazo del depósito.<br>
+        En otras palabras, el interés generado se reinvierte automáticamente para generar aún más intereses.</p>
+    </article>
+    <div class="bloque-informacion" id="BOTEM">
+      <div class="informacion" id="BotemInfo">
+        <div class="formulita">
+          <div class="formulita-dos" id="BotemFormDos">
+            <div class="recuadros-datos">
+              <label for="monto">Monto a calcular:</label>
+              <input type="text" placeholder="Ej: 70000" id="monto">
+            </div>
+            <div class="recuadros-datos">
+              <label for="porcentaje">Porcentaje:</label>
+              <input type="text" placeholder="Ingrese el porcentaje sin %" id="porcentaje">
+            </div>
+            <div class="recuadros-datos">
+              <label for="cantMeses">Cantidad meses:</label>
+              <input type="text" id="cantMeses"><br>
+            </div>
+            <button id="calcular">CALCULAR</button>
+            <button id="reset">RESET</button>
+            <p>TOTAL:</p>
+            <div class="recuadros-resultado">
+              <span id="totalAnual"></span><br>
+              <span id="descripcionTotal"></span>
+            </div>
+            <div id="container-fullscry">
+              <button title="Cerrar Pantalla Completa" id="cerrar-fullscreen"><img src="images/svg/cerrar.svg"
+                  alt="Imagen de cerrar ventana"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Botones pantalla completa-->
+    <div class="container-botones-bajos">
+      <div class="rec-botones-bajos">
+        <button title="Ver en pantalla completa" id="fullscreen-btn">
+          <img class="fullscreen" src="images/svg/fullscreen.svg" alt="icono pantalla completa">
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-info">
+        <h3>Hecho con <img class="pocima" src="images/svg/pasion.svg" title="Mucha pasion" alt="icono pocima">por&nbsp<a href="https://frafratt.dev/"> FraFratt </a> </h3>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
